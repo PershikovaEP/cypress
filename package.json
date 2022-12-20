@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:open": "npx cypress open ",
+    "cy:open": "npx cypress open",
     "cy:open:env": "npx cypress open --config-file cypress.env.config.js",
-    "cy:run:chrome": "npx cypress run --browser chrome",
-    "cy:run:edge": "npx cypress run --browser edge",
-    "cy:run:env": "npx cypress run --config-file cypress.env.config.js"
+    "cy:run:env:headless": "npx cypress run --config-file cypress.env.config.js --headless",
+    "cy:run:chrome:headless": "npx cypress run --browser chrome --headless",
+    "cy:run:edge:headless": "npx cypress run --browser edge --headless",
+    "cy:run:env:headed": "npx cypress run --config-file cypress.env.config.js --headed",
+    "cy:run:chrome:headed": "npx cypress run --browser chrome --headed",
+    "cy:run:edge:headed": "npx cypress run --browser edge --headed"
   },
   "author": "",
   "license": "ISC",
